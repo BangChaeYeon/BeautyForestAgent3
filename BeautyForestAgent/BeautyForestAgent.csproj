@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -62,6 +65,12 @@
     <Compile Include="FormModify.Designer.cs">
       <DependentUpon>FormModify.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFontAndColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFontAndColor.Designer.cs">
+      <DependentUpon>FormFontAndColor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOpinion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormModify.resx">
       <DependentUpon>FormModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFontAndColor.resx">
+      <DependentUpon>FormFontAndColor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOpinion.resx">
       <DependentUpon>FormOpinion.cs</DependentUpon>
@@ -109,6 +121,8 @@
     <Content Include="img\modify.PNG" />
     <Content Include="img\tsbtnColor.png" />
     <Content Include="img\tsbtnFont.png" />
+    <None Include="Resources\tsbtnColor.png" />
+    <None Include="Resources\tsbtnFont.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

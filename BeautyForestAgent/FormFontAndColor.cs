@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace BeautyForestAgent
 {
-    public partial class FormOpnion : Form
+    public partial class FormFontAndColor : Form
     {
-        public FormOpnion()
+        public FormFontAndColor()
         {
             InitializeComponent();
         }
