@@ -2,26 +2,37 @@
 {
     partial class FormFontAndColor
     {
+        private System.ComponentModel.IContainer components = null;
+
         /// <summary>
-        /// Required designer variable.
+        /// 사용 중인 모든 리소스를 정리합니다.
         /// </summary>
+        /// <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
 
-        #region Windows Form Designer generated code
+        #region Windows Form 디자이너에서 생성한 코드
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// 디자이너 지원에 필요한 메서드입니다. 
+        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
         /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFontAndColor));
             this.tlsMenu = new System.Windows.Forms.ToolStrip();
+            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
-            this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
-            this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.button1 = new System.Windows.Forms.Button();
             this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -37,15 +48,6 @@
             this.tlsMenu.TabIndex = 0;
             this.tlsMenu.Text = "toolStrip1";
             // 
-            // rtbText
-            // 
-            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rtbText.Location = new System.Drawing.Point(0, 33);
-            this.rtbText.Name = "rtbText";
-            this.rtbText.Size = new System.Drawing.Size(460, 315);
-            this.rtbText.TabIndex = 1;
-            this.rtbText.Text = resources.GetString("rtbText.Text");
-            // 
             // tsbtnFont
             // 
             this.tsbtnFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -54,6 +56,7 @@
             this.tsbtnFont.Name = "tsbtnFont";
             this.tsbtnFont.Size = new System.Drawing.Size(34, 28);
             this.tsbtnFont.Text = "toolStripButton1";
+            this.tsbtnFont.Click += new System.EventHandler(this.TsbtnFont_Click);
             // 
             // tsbtnColor
             // 
@@ -63,27 +66,38 @@
             this.tsbtnColor.Name = "tsbtnColor";
             this.tsbtnColor.Size = new System.Drawing.Size(34, 28);
             this.tsbtnColor.Text = "toolStripButton1";
+            this.tsbtnColor.Click += new System.EventHandler(this.TsbtnColor_Click);
             // 
-            // statusStrip1
+            // rtbText
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 320);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(460, 28);
-            this.statusStrip1.SizingGrip = false;
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "3108 방채연";
+            this.rtbText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbText.Location = new System.Drawing.Point(0, 33);
+            this.rtbText.Name = "rtbText";
+            this.rtbText.Size = new System.Drawing.Size(460, 315);
+            this.rtbText.TabIndex = 1;
+            this.rtbText.Text = resources.GetString("rtbText.Text");
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("나눔고딕ET", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(0, 302);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(460, 46);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "전송";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // FormFontAndColor
             // 
             this.ClientSize = new System.Drawing.Size(460, 348);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.rtbText);
             this.Controls.Add(this.tlsMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormFontAndColor";
-            this.Text = "3108 방채연";
+            this.Text = "건의 사항";
             this.tlsMenu.ResumeLayout(false);
             this.tlsMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -99,6 +113,6 @@
         private System.Windows.Forms.ColorDialog colorDlg;
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.ToolStripButton tsbtnColor;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.Button button1;
     }
 }

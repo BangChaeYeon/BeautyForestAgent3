@@ -1,6 +1,6 @@
 ﻿namespace BeautyForestAgent
 {
-    partial class FormFontAndColor
+    partial class FormOpnion
     {
         /// <summary>
         /// Required designer variable.
