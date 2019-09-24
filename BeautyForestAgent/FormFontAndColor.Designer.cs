@@ -1,6 +1,6 @@
 ﻿namespace BeautyForestAgent
 {
-    partial class FormFontAndColor
+    partial class Form1
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -25,14 +25,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFontAndColor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tlsMenu = new System.Windows.Forms.ToolStrip();
             this.tsbtnFont = new System.Windows.Forms.ToolStripButton();
             this.tsbtnColor = new System.Windows.Forms.ToolStripButton();
             this.fontDlg = new System.Windows.Forms.FontDialog();
             this.colorDlg = new System.Windows.Forms.ColorDialog();
             this.rtbText = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tlsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,27 +77,25 @@
             this.rtbText.TabIndex = 1;
             this.rtbText.Text = resources.GetString("rtbText.Text");
             // 
-            // button1
+            // statusStrip1
             // 
-            this.button1.Font = new System.Drawing.Font("나눔고딕ET", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(0, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(460, 46);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "전송";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 326);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(460, 22);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "3108 방채연";
             // 
-            // FormFontAndColor
+            // Form1
             // 
             this.ClientSize = new System.Drawing.Size(460, 348);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.rtbText);
             this.Controls.Add(this.tlsMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "FormFontAndColor";
-            this.Text = "건의 사항";
+            this.Name = "Form1";
+            this.Text = "3108 방채연";
             this.tlsMenu.ResumeLayout(false);
             this.tlsMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -113,6 +111,6 @@
         private System.Windows.Forms.ColorDialog colorDlg;
         private System.Windows.Forms.RichTextBox rtbText;
         private System.Windows.Forms.ToolStripButton tsbtnColor;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
     }
 }
